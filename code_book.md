@@ -5,71 +5,71 @@
 ## The following information describes the experiment based on information provided
 
 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
-1 WALKING
-2 WALKING_UPSTAIRS
-3 WALKING_DOWNSTAIRS
-4 SITTING
-5 STANDING
-6 LAYING
+* 1 WALKING
+* 2 WALKING_UPSTAIRS
+* 3 WALKING_DOWNSTAIRS
+* 4 SITTING
+* 5 STANDING
+* 6 LAYING
 
 Measurements captured:
-*3-axial linear acceleration
-*3-axial angular velocity 
+* 3-axial linear acceleration
+* 3-axial angular velocity 
 Dataset partitioned into two sets:
-*70% the training data
-*30% the test data. 
+* 70% the training data
+* 30% the test data. 
 
 For each record, it is provided:
-*Triaxial acceleration 
-*total acceleration 
-*body acceleration
-*Triaxial Angular velocity 
-*A 561-feature vector 
-*Its activity label. 
-*An identifier of the subject who carried out the experiment.
+* Triaxial acceleration 
+* total acceleration 
+* body acceleration
+* Triaxial Angular velocity 
+* A 561-feature vector 
+* Its activity label. 
+* An identifier of the subject who carried out the experiment.
 
 The original dataset includes the following files:
 
-'README.txt'
-'features_info.txt': Shows information about the variables used on the feature vector.
-'features.txt': List of all features.
-'activity_labels.txt': Links the class labels with their activity name.
-'train/X_train.txt': Training set.
-'train/y_train.txt': Training labels.
-'test/X_test.txt': Test set.
-'test/y_test.txt': Test labels.
+* 'README.txt'
+* 'features_info.txt': Shows information about the variables used on the feature vector.
+* 'features.txt': List of all features.
+* 'activity_labels.txt': Links the class labels with their activity name.
+* 'train/X_train.txt': Training set.
+* 'train/y_train.txt': Training labels.
+* 'test/X_test.txt': Test set.
+* 'test/y_test.txt': Test labels.
 
 The following files are available for the train and test data. Their descriptions are equivalent. 
 
-*'subject_train.txt'/'subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+* 'subject_train.txt'/'subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
 Features Information:
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals:
-*tAcc-XYZ : Separated into:
+* tAcc-XYZ : Separated into:
 	+tBodyAcc-XYZ
 	+tGravityAcc-XYZ
-*tGyro-XYZ
-*These time domain signals (prefix 't' to denote time).
+* tGyro-XYZ
+* These time domain signals (prefix 't' to denote time).
 
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals:
-*tBodyAccJerk-XYZ
-*tBodyGyroJerk-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyroJerk-XYZ
 	
 Also the magnitude of these three-dimensional signals were calculated
-*tBodyAccMag, 
-*tGravityAccMag, 
-*tBodyAccJerkMag, 
-*tBodyGyroMag, 
-*tBodyGyroJerkMag
+* tBodyAccMag, 
+* tGravityAccMag, 
+* tBodyAccJerkMag, 
+* tBodyGyroMag, 
+* tBodyGyroJerkMag
 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing a frequency dependant variable "f"
-*fBodyAcc-XYZ, 
-*fBodyAccJerk-XYZ, 
-*fBodyGyro-XYZ, 
-*fBodyAccJerkMag, 
-*fBodyGyroMag, 
-*fBodyGyroJerkMag. 
+* fBodyAcc-XYZ, 
+* fBodyAccJerk-XYZ, 
+* fBodyGyro-XYZ, 
+* fBodyAccJerkMag, 
+* fBodyGyroMag, 
+* fBodyGyroJerkMag. 
 
 ## The following information describes the workflow that was performed to clean and gather the data into a tidy dat set:
 
@@ -97,26 +97,26 @@ merged_df
 
 ### 2. Extracts only the measurements on the mean and standard deviation for each measurement.
 
-features : The set of variables that were estimated from the signals
-toMatch : the list of strings used to identify the mean and standard deviation
-matches : extracts the column indices for this the mean and standard deviation correspond to
-all_matches : list "matches" plus inlcudes the name of the subjects (their id #) and the activity
-simplified_df : data frame that extracts desired columns based on all_matches (for mean and std)
+* features : The set of variables that were estimated from the signals
+* toMatch : the list of strings used to identify the mean and standard deviation
+* matches : extracts the column indices for this the mean and standard deviation correspond to
+* all_matches : list "matches" plus inlcudes the name of the subjects (their id #) and the activity
+* simplified_df : data frame that extracts desired columns based on all_matches (for mean and std)
 
 ### 3. Uses descriptive activity names to name the activities in the data set
 
-activity_labels ("activity_labels.txt")
+* activity_labels ("activity_labels.txt")
 
-labelled_df : create a column with the activity labels, this uses the sapply function and the mutate function
-ordered_df: order the columns in toder to have the subject and activity labels in the first two columns
+* labelled_df : create a column with the activity labels, this uses the sapply function and the mutate function
+* ordered_df: order the columns in toder to have the subject and activity labels in the first two columns
 
 ### 4. Appropriately labels the data set with descriptive variable names.
 
-feature_labels : uses the list "toMatch" to extract the list of variable names with mean and standard deviation
+* feature_labels : uses the list "toMatch" to extract the list of variable names with mean and standard deviation
 
-column_labels : appends the subject ID and activity label to the above list
+* column_labels : appends the subject ID and activity label to the above list
 
-clean up naming character strings using piping operator: replace "-" with ".", remove "()"
+* clean up naming character strings using piping operator: replace "-" with ".", remove "()"
 
 After replacing "t" with "time" and "f" with "Freq", we also replace dashes and parenthesis to make the variables easier to read.
 
