@@ -3,7 +3,7 @@
 
 This document describes the workflow performed on the exercise data for the Assignment 4 in the Getting and Cleaning Data Course. 
 
-To read the final tidy data set in R, type: read.table("Run_Analysis_Averages.txt")
+To read the final tidy data set in R, type: read.table("Run_Analysis_Averages.txt", header = TRUE)
 
 ### Loading the data files: Read the training and test sets with respective subject and activity:
 * In this step we use the read.table function to read the data into R
