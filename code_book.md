@@ -77,19 +77,19 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 
 **Rename the input files with meaningful names:**
 
-train_set ("X_train.txt")
-test_set  ("X_test.txt")
-activity_train  ("y_train.txt")
-activity_test   ("y_test.txt")
-subject_train ("subject_train.txt")
-subject_test  ("subject_test.txt")
+* train_set ("X_train.txt")
+* test_set  ("X_test.txt")
+* activity_train  ("y_train.txt")
+* activity_test   ("y_test.txt")
+* subject_train ("subject_train.txt")
+* subject_test  ("subject_test.txt")
 
 ### 1. Merges the training and the test sets to create one data set. 
 
 **Combine each data set**
 
-training_data: combine the columns of the train
-test_data: combine the columns of test data
+* training_data: combine the columns of the train
+* test_data: combine the columns of test data
 
 **merge both data sets into one**
 
@@ -122,87 +122,87 @@ After replacing "t" with "time" and "f" with "Freq", we also replace dashes and 
 
 ### Based on the above informationThe final tidy data set contains the following variables
 
-1 Subject.ID
-2 Activity
-3 time.BodyAcc.mean.X
-4 time.BodyAcc.mean.Y
-5 time.BodyAcc.mean.Z
-6 time.BodyAcc.std.X
-7 time.BodyAcc.std.Y
-8 time.BodyAcc.std.Z
-9 time.GravityAcc.mean.X
-10 time.GravityAcc.mean.Y
-11 time.GravityAcc.mean.Z
-12 time.GravityAcc.std.X
-13 time.GravityAcc.std.Y
-14 time.GravityAcc.std.Z
-15 time.BodyAccJerk.mean.X
-16 time.BodyAccJerk.mean.Y
-17 time.BodyAccJerk.mean.Z
-18 time.BodyAccJerk.std.X
-19 time.BodyAccJerk.std.Y
-20 time.BodyAccJerk.std.Z
-21 time.BodyGyro.mean.X
-22 time.BodyGyro.mean.Y
-23 time.BodyGyro.mean.Z
-24 time.BodyGyro.std.X
-25 time.BodyGyro.std.Y
-26 time.BodyGyro.std.Z
-27 time.BodyGyroJerk.mean.X
-28 time.BodyGyroJerk.mean.Y
-29 time.BodyGyroJerk.mean.Z
-30 time.BodyGyroJerk.std.X
-31 time.BodyGyroJerk.std.Y
-32 time.BodyGyroJerk.std.Z
-33 time.BodyAccMag.mean
-34 time.BodyAccMag.std
-35 time.GravityAccMag.mean
-36 time.GravityAccMag.std
-37 time.BodyAccJerkMag.mean
-38 time.BodyAccJerkMag.std
-39 time.BodyGyroMag.mean
-40 time.BodyGyroMag.std
-41 time.BodyGyroJerkMag.mean
-42 time.BodyGyroJerkMag.std
-43 freq.BodyAcc.mean.X
-44 freq.BodyAcc.mean.Y
-45 freq.BodyAcc.mean.Z
-46 freq.BodyAcc.std.X
-47 freq.BodyAcc.std.Y
-48 freq.BodyAcc.std.Z
-49 freq.BodyAcc.meanFreq.X
-50 freq.BodyAcc.meanFreq.Y
-51 freq.BodyAcc.meanFreq.Z
-52 freq.BodyAccJerk.mean.X
-53 freq.BodyAccJerk.mean.Y
-54 freq.BodyAccJerk.mean.Z
-55 freq.BodyAccJerk.std.X
-56 freq.BodyAccJerk.std.Y
-57 freq.BodyAccJerk.std.Z
-58 freq.BodyAccJerk.meanFreq.X
-59 freq.BodyAccJerk.meanFreq.Y
-60 freq.BodyAccJerk.meanFreq.Z
-61 freq.BodyGyro.mean.X
-62 freq.BodyGyro.mean.Y
-63 freq.BodyGyro.mean.Z
-64 freq.BodyGyro.std.X
-65 freq.BodyGyro.std.Y
-66 freq.BodyGyro.std.Z
-67 freq.BodyGyro.meanFreq.X
-68 freq.BodyGyro.meanFreq.Y
-69 freq.BodyGyro.meanFreq.Z
-70 freq.BodyAccMag.mean
-71 freq.BodyAccMag.std
-72 freq.BodyAccMag.meanFreq
-73 freq.BodyBodyAccJerkMag.mean
-74 freq.BodyBodyAccJerkMag.std
-75 freq.BodyBodyAccJerkMag.meanFreq
-76 freq.BodyBodyGyroMag.mean
-77 freq.BodyBodyGyroMag.std
-78 freq.BodyBodyGyroMag.meanFreq
-79 freq.BodyBodyGyroJerkMag.mean
-80 freq.BodyBodyGyroJerkMag.std
-81 freq.BodyBodyGyroJerkMag.meanFreq
+* 1 Subject.ID
+* 2 Activity
+* 3 time.BodyAcc.mean.X
+* 4 time.BodyAcc.mean.Y
+* 5 time.BodyAcc.mean.Z
+* 6 time.BodyAcc.std.X
+* 7 time.BodyAcc.std.Y
+* 8 time.BodyAcc.std.Z
+* 9 time.GravityAcc.mean.X
+* 10 time.GravityAcc.mean.Y
+* 11 time.GravityAcc.mean.Z
+* 12 time.GravityAcc.std.X
+* 13 time.GravityAcc.std.Y
+* 14 time.GravityAcc.std.Z
+* 15 time.BodyAccJerk.mean.X
+* 16 time.BodyAccJerk.mean.Y
+* 17 time.BodyAccJerk.mean.Z
+* 18 time.BodyAccJerk.std.X
+* 19 time.BodyAccJerk.std.Y
+* 20 time.BodyAccJerk.std.Z
+* 21 time.BodyGyro.mean.X
+* 22 time.BodyGyro.mean.Y
+* 23 time.BodyGyro.mean.Z
+* 24 time.BodyGyro.std.X
+* 25 time.BodyGyro.std.Y
+* 26 time.BodyGyro.std.Z
+* 27 time.BodyGyroJerk.mean.X
+* 28 time.BodyGyroJerk.mean.Y
+* 29 time.BodyGyroJerk.mean.Z
+* 30 time.BodyGyroJerk.std.X
+* 31 time.BodyGyroJerk.std.Y
+* 32 time.BodyGyroJerk.std.Z
+* 33 time.BodyAccMag.mean
+* 34 time.BodyAccMag.std
+* 35 time.GravityAccMag.mean
+* 36 time.GravityAccMag.std
+* 37 time.BodyAccJerkMag.mean
+* 38 time.BodyAccJerkMag.std
+* 39 time.BodyGyroMag.mean
+* 40 time.BodyGyroMag.std
+* 41 time.BodyGyroJerkMag.mean
+* 42 time.BodyGyroJerkMag.std
+* 43 freq.BodyAcc.mean.X
+* 44 freq.BodyAcc.mean.Y
+* 45 freq.BodyAcc.mean.Z
+* 46 freq.BodyAcc.std.X
+* 47 freq.BodyAcc.std.Y
+* 48 freq.BodyAcc.std.Z
+* 49 freq.BodyAcc.meanFreq.X
+* 50 freq.BodyAcc.meanFreq.Y
+* 51 freq.BodyAcc.meanFreq.Z
+* 52 freq.BodyAccJerk.mean.X
+* 53 freq.BodyAccJerk.mean.Y
+* 54 freq.BodyAccJerk.mean.Z
+* 55 freq.BodyAccJerk.std.X
+* 56 freq.BodyAccJerk.std.Y
+* 57 freq.BodyAccJerk.std.Z
+* 58 freq.BodyAccJerk.meanFreq.X
+* 59 freq.BodyAccJerk.meanFreq.Y
+* 60 freq.BodyAccJerk.meanFreq.Z
+* 61 freq.BodyGyro.mean.X
+* 62 freq.BodyGyro.mean.Y
+* 63 freq.BodyGyro.mean.Z
+* 64 freq.BodyGyro.std.X
+* 65 freq.BodyGyro.std.Y
+* 66 freq.BodyGyro.std.Z
+* 67 freq.BodyGyro.meanFreq.X
+* 68 freq.BodyGyro.meanFreq.Y
+* 69 freq.BodyGyro.meanFreq.Z
+* 70 freq.BodyAccMag.mean
+* 71 freq.BodyAccMag.std
+* 72 freq.BodyAccMag.meanFreq
+* 73 freq.BodyBodyAccJerkMag.mean
+* 74 freq.BodyBodyAccJerkMag.std
+* 75 freq.BodyBodyAccJerkMag.meanFreq
+* 76 freq.BodyBodyGyroMag.mean
+* 77 freq.BodyBodyGyroMag.std
+* 78 freq.BodyBodyGyroMag.meanFreq
+* 79 freq.BodyBodyGyroJerkMag.mean
+* 80 freq.BodyBodyGyroJerkMag.std
+* 81 freq.BodyBodyGyroJerkMag.meanFreq
 
 named_df: create new data frame and change column names of the new data frame
 
