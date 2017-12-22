@@ -1,5 +1,5 @@
 # Codebook for Run_Analysis.R file
-## Assignment 4 for Getting and Cleaning Data Course
+## Week 4 Assignment for Getting and Cleaning Data Course
 ### Author: Samuel Quiroga
 
 ## The following information describes the experiment based on information provided
