@@ -1,4 +1,4 @@
-## Cleaning and Getting Data - Assignment 4
+## Cleaning and Getting Data - Peer-Grade Assignment (Week 4)
 ### Author: Samuel Quiroga
 
 This document describes the workflow performed on the exercise data for the Assignment 4 in the Getting and Cleaning Data Course. 
